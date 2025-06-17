@@ -1,7 +1,7 @@
-# ⚡ ReactCraft Snippets
+# ⚡ Advanced React Snippets
 
 🎯 *Tired of typing the same React boilerplate over and over again?*  
-✨ **ReactCraft Snippets** is here to cast a magical spell on your productivity!
+✨ **Advanced React Snippets** is here to cast a magical spell on your productivity!
 
 ---
 
@@ -10,7 +10,7 @@
 ## 🚀 Why ReactCraft?
 
 Save keystrokes. Save time. Save your sanity.  
-Whether you're building components, working with hooks, or setting up context — **ReactCraft** has your back (and your code).
+Whether you're building components, working with hooks, or setting up context — **Advanced React Snippets** has your back (and your code).
 
 > 🪄 *"Turn repetitive typing into single-word magic!"*
 
@@ -40,6 +40,11 @@ Below is the full list of available snippets in **ReactCraft**:
 
 | Prefix  | Description                                               |
 |---------|-----------------------------------------------------------|
+| `fc`    | Function Component
+| `ffc`   | Function Syntax Component (Arrow Function)                |
+| `sfc`   | Stateless Function Component                              |
+| `sfnc`  | Stateless Function Named Component                        |
+|
 | `cc`    | Class Component                                           |
 | `ccc`   | Class Component with Constructor                          |
 | `cdc`   | `componentDidCatch()` lifecycle method                    |
@@ -52,8 +57,6 @@ Below is the full list of available snippets in **ReactCraft**:
 | `cwrp`  | `componentWillReceiveProps()` (legacy)                    |
 | `cwu`   | `componentWillUpdate()` (legacy)                          |
 | `cwun`  | `componentWillUnmount()`                                  |
-| `fc`    | Function Component                                        |
-| `ffc`   | Function Syntax Component (Arrow Function)                |
 | `gds`   | `getDerivedStateFromProps()`                              |
 | `gsbu`  | `getSnapshotBeforeUpdate()`                               |
 | `hoc`   | Higher Order Component                                    |
@@ -67,8 +70,6 @@ Below is the full list of available snippets in **ReactCraft**:
 | `ren`   | `render()` method                                         |
 | `rprop` | Render Prop pattern                                       |
 | `scu`   | `shouldComponentUpdate()`                                 |
-| `sfc`   | Stateless Function Component                              |
-| `sfnc`  | Stateless Function Named Component                        |
 | `ssf`   | Functional `setState()`                                   |
 | `ss`    | `this.setState()`                                         |
 | `ucb`   | `useCallback()` Hook                                      |
@@ -93,7 +94,7 @@ Below is the full list of available snippets in **ReactCraft**:
 
 ## 📦 Installation
 
-Search for **`ReactCraft Snippets`** in the VS Code Marketplace, or install via CLI:
+Search for **`Advanced React Snippets`** in the VS Code Marketplace, or install via CLI:
 
 ```bash
 code --install-extension HareeshBhittam.reactcraft-snippets
