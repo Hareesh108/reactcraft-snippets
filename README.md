@@ -5,7 +5,7 @@
 
 ---
 
-![ReactCraft Logo](images/logo.png)
+<!-- ![ReactCraft Logo](images/logo.png) -->
 
 ## 🚀 Why ReactCraft?
 
