@@ -1,26 +1,276 @@
 {
-    "Functional Component": {
-        "prefix": "harsh1",
+    "Import React": {
+        "prefix": "imr",
         "body": [
-            "import React from 'react';",
+            "import React from 'react';"
+        ],
+        "description": "Import React"
+    },
+    "Import React, Component": {
+        "prefix": "imrc",
+        "body": [
+            "import React, { Component } from 'react';"
+        ],
+        "description": "Import React and Component"
+    },
+    "Import React, PureComponent": {
+        "prefix": "impc",
+        "body": [
+            "import React, { PureComponent } from 'react';"
+        ],
+        "description": "Import React and PureComponent"
+    },
+    "Import ReactDOM": {
+        "prefix": "imrd",
+        "body": [
+            "import ReactDOM from 'react-dom';"
+        ],
+        "description": "Import ReactDOM"
+    },
+    "Import useState": {
+        "prefix": "imrs",
+        "body": [
+            "import React, { useState } from 'react';"
+        ],
+        "description": "Import useState"
+    },
+    "Import useState and useEffect": {
+        "prefix": "imrse",
+        "body": [
+            "import React, { useState, useEffect } from 'react';"
+        ],
+        "description": "Import useState and useEffect"
+    },
+    "Import PropTypes": {
+        "prefix": "impt",
+        "body": [
+            "import PropTypes from 'prop-types';"
+        ],
+        "description": "Import PropTypes"
+    },
+    "Class Component": {
+        "prefix": "cc",
+        "body": [
+            "import React, { Component } from 'react';",
             "",
+            "class ${1:ComponentName} extends Component {",
+            "  render() {",
+            "    return (",
+            "      <div>$0</div>",
+            "    );",
+            "  }",
+            "}",
+            "",
+            "export default ${1:ComponentName};"
+        ],
+        "description": "React Class Component"
+    },
+    "Class Component with Constructor": {
+        "prefix": "ccc",
+        "body": [
+            "import React, { Component } from 'react';",
+            "",
+            "class ${1:ComponentName} extends Component {",
+            "  constructor(props) {",
+            "    super(props);",
+            "    this.state = {};",
+            "  }",
+            "",
+            "  render() {",
+            "    return <div>$0</div>;",
+            "  }",
+            "}",
+            "",
+            "export default ${1:ComponentName};"
+        ],
+        "description": "React Class Component with Constructor"
+    },
+    "Function Component": {
+        "prefix": "fc",
+        "body": [
+            "function ${1:ComponentName}() {",
+            "  return <div>$0</div>;",
+            "}",
+            "",
+            "export default ${1:ComponentName};"
+        ],
+        "description": "Function Component"
+    },
+    "Function Component Arrow Syntax": {
+        "prefix": "ffc",
+        "body": [
             "const ${1:ComponentName} = () => {",
-            "  return (",
-            "    <div>",
-            "      $0",
-            "    </div>",
-            "  );",
+            "  return <div>$0</div>;",
             "};",
             "",
             "export default ${1:ComponentName};"
         ],
-        "description": "Create a React Functional Component"
+        "description": "Function Syntax Component"
+    },
+    "Stateless Function Component": {
+        "prefix": "sfc",
+        "body": [
+            "const ${1:ComponentName} = () => (",
+            "  <div>$0</div>",
+            ");",
+            "",
+            "export default ${1:ComponentName};"
+        ],
+        "description": "Stateless Function Component (Arrow)"
     },
     "useState Hook": {
-        "prefix": "us",
+        "prefix": "usf",
         "body": [
-            "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:initialValue});"
+            "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:''});"
         ],
-        "description": "useState hook"
+        "description": "Declare a new state variable using State Hook"
+    },
+    "useEffect Hook": {
+        "prefix": "uef",
+        "body": [
+            "useEffect(() => {",
+            "  $0",
+            "}, [${1:dependencies}]);"
+        ],
+        "description": "useEffect Hook"
+    },
+    "useCallback Hook": {
+        "prefix": "ucb",
+        "body": [
+            "const ${1:callback} = useCallback(() => {",
+            "  $0",
+            "}, [${2:dependencies}]);"
+        ],
+        "description": "useCallback Hook"
+    },
+    "useRef Hook": {
+        "prefix": "usr",
+        "body": [
+            "const ${1:ref} = useRef(${2:null});"
+        ],
+        "description": "Declare a new ref Variable using useRef Hook"
+    },
+    "setState": {
+        "prefix": "ss",
+        "body": [
+            "this.setState({ $1 });"
+        ],
+        "description": "setState"
+    },
+    "Functional setState": {
+        "prefix": "ssf",
+        "body": [
+            "this.setState(prevState => ({",
+            "  $1",
+            "}));"
+        ],
+        "description": "Functional setState"
+    },
+    "componentDidMount": {
+        "prefix": "cdm",
+        "body": [
+            "componentDidMount() {\n  $0\n}"
+        ],
+        "description": "componentDidMount"
+    },
+    "componentDidUpdate": {
+        "prefix": "cdu",
+        "body": [
+            "componentDidUpdate(prevProps, prevState) {\n  $0\n}"
+        ],
+        "description": "componentDidUpdate"
+    },
+    "componentWillUnmount": {
+        "prefix": "cwun",
+        "body": [
+            "componentWillUnmount() {\n  $0\n}"
+        ],
+        "description": "componentWillUnmount"
+    },
+    "componentWillMount": {
+        "prefix": "cwm",
+        "body": [
+            "componentWillMount() {\n  $0\n}"
+        ],
+        "description": "componentWillMount"
+    },
+    "componentWillReceiveProps": {
+        "prefix": "cwrp",
+        "body": [
+            "componentWillReceiveProps(nextProps) {\n  $0\n}"
+        ],
+        "description": "componentWillReceiveProps"
+    },
+    "componentWillUpdate": {
+        "prefix": "cwu",
+        "body": [
+            "componentWillUpdate(nextProps, nextState) {\n  $0\n}"
+        ],
+        "description": "componentWillUpdate"
+    },
+    "componentDidCatch": {
+        "prefix": "cdc",
+        "body": [
+            "componentDidCatch(error, info) {\n  $0\n}"
+        ],
+        "description": "componentDidCatch"
+    },
+    "getDerivedStateFromProps": {
+        "prefix": "gds",
+        "body": [
+            "static getDerivedStateFromProps(nextProps, prevState) {\n  $0\n}"
+        ],
+        "description": "getDerivedStateFromProps"
+    },
+    "getSnapshotBeforeUpdate": {
+        "prefix": "gsbu",
+        "body": [
+            "getSnapshotBeforeUpdate(prevProps, prevState) {\n  $0\n}"
+        ],
+        "description": "getSnapshotBeforeUpdate"
+    },
+    "shouldComponentUpdate": {
+        "prefix": "scu",
+        "body": [
+            "shouldComponentUpdate(nextProps, nextState) {\n  return $0;\n}"
+        ],
+        "description": "shouldComponentUpdate"
+    },
+    "Render Method": {
+        "prefix": "ren",
+        "body": [
+            "render() {\n  return (\n    <div>$0</div>\n  );\n}"
+        ],
+        "description": "render method"
+    },
+    "Render Prop": {
+        "prefix": "rprop",
+        "body": [
+            "{this.props.${1:renderPropName}()}"
+        ],
+        "description": "Render Prop"
+    },
+    "Context Provider": {
+        "prefix": "cp",
+        "body": [
+            "const ${1:MyContext} = React.createContext();",
+            "",
+            "<${1:MyContext}.Provider value={${2:value}}>",
+            "  $0",
+            "</${1:MyContext}.Provider>"
+        ],
+        "description": "Context Provider"
+    },
+    "Higher Order Component": {
+        "prefix": "hoc",
+        "body": [
+            "const ${1:withEnhancer} = (WrappedComponent) => {",
+            "  return (props) => {",
+            "    $0",
+            "    return <WrappedComponent {...props} />;",
+            "  };",
+            "};"
+        ],
+        "description": "Higher Order Component"
     }
 }
