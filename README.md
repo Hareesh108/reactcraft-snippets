@@ -7,7 +7,7 @@
 
 ## 📸 Demo
 
-<!-- ![Demo GIF](images/nextjs-snippets-demo.gif) -->
+![Demo](images/react-snippets-demo.gif)
 
 ---
 

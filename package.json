@@ -3,7 +3,7 @@
   "displayName": "Advanced React Snippets",
   "description": "React and Nextjs code snippets for faster and cleaner development.",
   "publisher": "HareeshBhittam",
-  "version": "0.0.8",
+  "version": "1.0.0",
   "license": "MIT",
   "engines": {
     "vscode": "^1.101.0"
