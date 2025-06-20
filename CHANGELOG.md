@@ -6,7 +6,14 @@ This project adheres to [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
 
-## [0.0.8] - 2025-06-21
+## [1.0.0] - 2025-06-21
+
+### Added
+
+- Added demo sample so use can get a idea.
+- README rewrite with clear category grouping of snippets.
+
+## [0.0.8] - 2025-06-20
 
 ### Added
 
