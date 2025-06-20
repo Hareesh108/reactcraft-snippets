@@ -1,18 +1,113 @@
-# ⚡ Advanced React Snippets
+# ⚡ Advanced React Snippets 2025
 
 🎯 *Tired of typing the same React boilerplate over and over again?*  
 ✨ **Advanced React Snippets** is here to cast a magical spell on your productivity!
 
 ---
 
-<!-- ![ReactCraft Logo](images/logo.png) -->
+## 📸 Demo
 
-## 🚀 Why ReactCraft?
+<!-- ![Demo GIF](images/nextjs-snippets-demo.gif) -->
+
+---
+
+## 🚀 Why React Snippets?
 
 Save keystrokes. Save time. Save your sanity.  
 Whether you're building components, working with hooks, or setting up context — **Advanced React Snippets** has your back (and your code).
 
 > 🪄 *"Turn repetitive typing into single-word magic!"*
+
+---
+
+## 💡 Usage
+
+Start typing one of the prefixes, and IntelliSense will do the rest.  
+Here's a taste of what you get:
+
+---
+
+## 💡 Snippet List
+
+### 📦 Component Snippets
+
+| Prefix  | Description                                      |
+|---------|--------------------------------------------------|
+| `fc`    | Function Component                               |
+| `ffc`   | Function Syntax Component (Arrow Function)       |
+| `sfc`   | Stateless Function Component                     |
+| `sfnc`  | Stateless Function Named Component               |
+| `cc`    | Class Component                                  |
+| `ccc`   | Class Component with Constructor                 |
+| `cpf`   | Class Property Function                          |
+| `hoc`   | Higher Order Component                           |
+| `ren`   | `render()` method                                |
+| `rprop` | Render Prop pattern                              |
+
+---
+
+### 🧠 React Hooks
+
+| Prefix  | Description                                      |
+|---------|--------------------------------------------------|
+| `usf`   | Declare `useState()` Hook                        |
+| `uef`   | `useEffect()` Hook                               |
+| `ucb`   | `useCallback()` Hook                             |
+| `usr`   | Declare `useRef()` Hook                          |
+
+---
+
+### 🌐 Imports
+
+| Prefix  | Description                                      |
+|---------|--------------------------------------------------|
+| `imr`   | Import React                                      |
+| `imrc`  | Import React and `Component`                      |
+| `impc`  | Import React and `PureComponent`                 |
+| `imrd`  | Import `react-dom`                               |
+| `imrs`  | Import React and `useState`                      |
+| `imrse` | Import React, `useState`, and `useEffect`        |
+| `impt`  | Import PropTypes                                 |
+
+---
+
+### 🏛️ Class Component Lifecycle
+
+| Prefix  | Description                                      |
+|---------|--------------------------------------------------|
+| `cdm`   | `componentDidMount()`                            |
+| `cdu`   | `componentDidUpdate()`                           |
+| `cwun`  | `componentWillUnmount()`                         |
+| `cdc`   | `componentDidCatch()`                            |
+| `cwm`   | `componentWillMount()` *(legacy)*                |
+| `cwrp`  | `componentWillReceiveProps()` *(legacy)*         |
+| `cwu`   | `componentWillUpdate()` *(legacy)*               |
+| `gds`   | `getDerivedStateFromProps()`                     |
+| `gsbu`  | `getSnapshotBeforeUpdate()`                      |
+| `scu`   | `shouldComponentUpdate()`                        |
+
+---
+
+### 📚 State Management
+
+| Prefix  | Description                                      |
+|---------|--------------------------------------------------|
+| `ss`    | `this.setState()`                                |
+| `ssf`   | Functional `setState()`                          |
+
+---
+
+### 🌳 Context API
+
+| Prefix  | Description                                      |
+|---------|--------------------------------------------------|
+| `cp`    | Context Provider                                 |
+
+---
+
+💡 Use the prefix (e.g., `ffc`) in a React `.jsx` or `.tsx` file, press `Tab`, and the boilerplate code will appear like ✨ magic!
+
+> ⌨️ Just type the prefix, hit `Tab`, and boom — the code appears!
 
 ---
 
@@ -26,62 +121,6 @@ Whether you're building components, working with hooks, or setting up context �
 ✅ **ReactDOM, PropTypes Imports**  
 ✅ **TypeScript + JavaScript support**  
 ✅ **Naming conventions auto-filled** (with VS Code tabstop magic ✨)
-
----
-
-## 💡 Usage
-
-Start typing one of the prefixes, and IntelliSense will do the rest.  
-Here's a taste of what you get:
-
-## 💡 Snippet List
-
-Below is the full list of available snippets in **ReactCraft**:
-
-| Prefix  | Description                                               |
-|---------|-----------------------------------------------------------|
-| `fc`    | Function Component
-| `ffc`   | Function Syntax Component (Arrow Function)                |
-| `sfc`   | Stateless Function Component                              |
-| `sfnc`  | Stateless Function Named Component                        |
-|
-| `cc`    | Class Component                                           |
-| `ccc`   | Class Component with Constructor                          |
-| `cdc`   | `componentDidCatch()` lifecycle method                    |
-| `cdm`   | `componentDidMount()` lifecycle method                    |
-| `cdu`   | `componentDidUpdate()` lifecycle method                   |
-| `cpc`   | Class Pure Component                                      |
-| `cp`    | Context Provider                                          |
-| `cpf`   | Class Property Function                                   |
-| `cwm`   | `componentWillMount()` (legacy)                           |
-| `cwrp`  | `componentWillReceiveProps()` (legacy)                    |
-| `cwu`   | `componentWillUpdate()` (legacy)                          |
-| `cwun`  | `componentWillUnmount()`                                  |
-| `gds`   | `getDerivedStateFromProps()`                              |
-| `gsbu`  | `getSnapshotBeforeUpdate()`                               |
-| `hoc`   | Higher Order Component                                    |
-| `impc`  | Import React and `PureComponent`                          |
-| `imrd`  | Import `react-dom`                                        |
-| `imrc`  | Import React and `Component`                              |
-| `imr`   | Import React                                              |
-| `imrs`  | Import React and `useState`                               |
-| `imrse` | Import React, `useState`, and `useEffect`                 |
-| `impt`  | Import PropTypes                                          |
-| `ren`   | `render()` method                                         |
-| `rprop` | Render Prop pattern                                       |
-| `scu`   | `shouldComponentUpdate()`                                 |
-| `ssf`   | Functional `setState()`                                   |
-| `ss`    | `this.setState()`                                         |
-| `ucb`   | `useCallback()` Hook                                      |
-| `uef`   | `useEffect()` Hook                                        |
-| `usf`   | Declare `useState()` Hook                                 |
-| `usr`   | Declare `useRef()` Hook                                   |
-
----
-
-💡 Use the prefix (e.g., `ffc`) in a React `.jsx` or `.tsx` file, press `Tab`, and the boilerplate code will appear like ✨ magic!
-
-> ⌨️ Just type the prefix, hit `Tab`, and boom — the code appears!
 
 ---
 

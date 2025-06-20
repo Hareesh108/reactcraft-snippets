@@ -67,16 +67,19 @@
     "snippets": [
       {
         "language": "javascriptreact",
-        "path": "./reactcraft-snippets/react.json"
+        "path": "./snippets/react.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./reactcraft-snippets/react.json"
+        "path": "./snippets/react.json"
       }
     ]
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Hareesh108/reactcraft-snippets.git"
-  }
+  },
+  "recommendations": [
+    "HareeshBhittam.next-js-snippets-latest"
+  ]
 }
